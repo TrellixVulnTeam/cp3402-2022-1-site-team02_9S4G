@@ -1,0 +1,1 @@
+Use this folder for keeping track of Photos, Logos, Banners, etc so we can be on the same page and properly document/site them later.
