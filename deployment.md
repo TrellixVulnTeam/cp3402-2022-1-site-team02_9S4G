@@ -10,9 +10,9 @@ Local: Up to the user on their preferred local environment. E.g. Flywheel Local,
 
 DNS: DNS is managed through Cloudflare (free tier) which provides a degree of separation between registrar, DNS and hosting (AWS). Cloudflare also provides some caching capabilities in the event the site goes offline.
 
-## Development Workflows
+## Development Workflows
 
-### 1) Theme Development
+### Theme Development
 
 1. From Production, export database from Production to your local environment and create a new branch from the 'release' branch
   
@@ -27,10 +27,10 @@ DNS: DNS is managed through Cloudflare (free tier) which provides a degree of se
 6. Push content to 'release' Github branch
   
 
-### 2) Content Development
+### Content Development
 
 Updates to Wordpress content should first be completed in the Local or Staging environments so there is no impact to end users and any content issues are identified and resolved.
 
-## Database Considerations
+## Database Considerations
 
 During development, ensure you always have an updated copy of the production database, especially when pushing your changes to Staging, and then Production. Pushing to Staging first ensures that both live environments have identical content.
