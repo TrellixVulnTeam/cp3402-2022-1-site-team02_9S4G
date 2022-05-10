@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package TSVJazz
+ * @package tsvjazz
  */
 
 if ( ! function_exists( 'tsvjazz_posted_on' ) ) :

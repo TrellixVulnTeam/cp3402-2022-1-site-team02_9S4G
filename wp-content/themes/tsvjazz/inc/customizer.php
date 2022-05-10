@@ -1,8 +1,8 @@
 <?php
 /**
- * TSVJazz Theme Customizer
+ * tsvjazz Theme Customizer
  *
- * @package TSVJazz
+ * @package tsvjazz
  */
 
 /**

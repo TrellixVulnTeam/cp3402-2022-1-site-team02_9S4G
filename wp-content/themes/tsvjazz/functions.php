@@ -1,10 +1,10 @@
 <?php
 /**
- * TSVJazz functions and definitions
+ * tsvjazz functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package TSVJazz
+ * @package tsvjazz
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -23,7 +23,7 @@ function tsvjazz_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on TSVJazz, use a find and replace
+		* If you're building a theme based on tsvjazz, use a find and replace
 		* to change 'tsvjazz' to the name of your theme in all the template files.
 		*/
 	load_theme_textdomain( 'tsvjazz', get_template_directory() . '/languages' );
