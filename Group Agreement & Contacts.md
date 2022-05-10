@@ -10,14 +10,10 @@
 ## Communication Methods
 **What preferred methods of communication has your team decided on?**
 
-(You must have a plan for communicating regularly and effectively.)
-
 Principle communication will be over Slack (DMs) or Discord (DMs, calls, screenshots). Email addresses will be provided but will only be used if primary means of communication fails. Phone numbers will be provided on a case-by-case basis if members feel appropriate and are only to be used in emergencies. Texts will be preferred over calls.
 
 ## Meeting Arrangements
 **What are your meeting arrangements?**
-
-(When and where are you going to meet outside prac time? weekly, twice a week... in the labs, at a team member's home, on Google Hangouts every 3rd day, etc.)
 
 Meetings will take place over audio call or group DMs using Slack or Discord, primarily in the afternoon and preferably on weekends. Group members will agree on meeting dates times on a weekly basis, usually at the end of an existing meeting.
 
@@ -29,14 +25,10 @@ Send apologies in advance to group chat and summarise what you have completed, w
 ## Dealing with Problems
 **What arrangements have you agreed on for what to do if a team member is not working effectively?**
 
-(E.g. if a member does not attend meetings, does not respond to communication attempts or does not complete assigned work.)
-
 If a teammate is refusing to communicate and is unresponsive (after attempts through multiple channels/means), a record of these attempts will be provided to the instructor. If a member is not completing assigned work, records of commits, unfinished Trello tasks, and other proof will be collected and a conversation with the instructor will begin.
 
 ## Skills Assessment
 **What can each team member contribute to the project?**
-
-(List each team member's name with their currently anticipated role within the team.)
 
 Michael Fisher - Project Management | Basic WordPress Structure | some PHPstorm Editing/Integration | Site Hosting |
 
