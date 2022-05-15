@@ -1,12 +1,12 @@
-#Deployment Overview
+# Deployment Overview
 
-##Applications and Processes
+## Applications and Processes
 
 Our site deployment for this project takes advantage of a number of programs, applications, and working environments to facilitate
 the creation and editing of the site theme and to push those changes to the development (test) site and finally to the live site. The applications
 used, a brief description on how (and why) they are used in this particular project, and a link to acquire them can be found below:
 
-###Theme Development
+### Theme Development
 
 **PhpStorm**: PhpStorm is a cross-platform IDE created by JetBrains used to edit various types of code (PHP, HTML, Javascript, etc). In this project it is the primary means of editing the theme and was chosen due to its popularity and its various "Wordpress Aware" features. PhpStorm can be downloaded here: https://www.jetbrains.com/phpstorm/
 
@@ -20,7 +20,7 @@ practices/workflows to our development. You can find Sass here, but it can be se
 platforms. In this project, Grunt is used to assist in the processing of our Sass (scss) files and css files. It was chosen due to its
 popular use with Wordpress sites and after testing with similar applications. Grunt can be downloaded here: https://gruntjs.com/
 
-###Hosting and Deployment
+### Hosting and Deployment
 
 **Bitnami**: Bitnami is a library of installers and software packages used to run certain applications or provide features and support to application environments. In this project Bitnami is
 used to locally host our Wordpress site and contains an Apache web server and hosting for our site's database. We chose Bitnami as it already had inbuilt functionality with Wordpress and was a simple "one-click" installation and 
@@ -33,7 +33,7 @@ setup. You can find Bitnami with Wordpress here: https://bitnami.com/stack/wordp
 We also used the service for caching in case the website went down temporarily. We used to free tier of the service and chose Cloudflare out of convenience, as we already had some
 experience or other active projects using it.
 
-###Project Management
+### Project Management
 
 **Github**: Github is a wildly used platform for developers to build, share and maintain software, code, applications, and more. In this project, we used Github to host a repository for all of our code and resources and to maintain detailed version control of the changes we have made throughout
 the project. Information on github can be found here: https://github.com/
@@ -54,13 +54,13 @@ a living document that can be shared between team members or made public. We use
 
 ## Environment Overview
 
-###Local Environment
+### Local Environment
 
 Local versions of our project (localhost) were set up identically for each team member to facilitate ease of troubleshooting issues and to maintain
 a homogeneous environment across the team. Locally, each team member worked on a Github-hosted repository using PhpStorm, Grunt.js, and Sass. Each developer's local site was
 hosted using a Bitnami Wordpress package containing the necessary database integration and apache web server. Changes made in this local environment were pushed back to Github to synchronise with other teammates.
 
-###Hosted Environment
+### Hosted Environment
 
 Staging and Production environments are hosted using separate AWS Lightsail instances with Bitnami's Wordpress installer. This provides a base Wordpress installation to start from and is easy for new developers to create new instances or clone existing instances should they need to. 
 
