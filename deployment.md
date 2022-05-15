@@ -73,7 +73,7 @@ to production using an Import/Export plugin.
 
 ## Development Workflows
 
-![Development Flowchart](../cp3402-2022-1-site-team02/resources/flowchart2.jpg)
+![Deployment FlowChart](https://github.com/cp3402-students/cp3402-2022-1-site-team02/blob/main/resources/flowchart2.jpg)
 
 ### Theme Development
 
