@@ -23,28 +23,44 @@ popular use with Wordpress sites and after testing with similar applications. Gr
 used to locally host our Wordpress site and contains an Apache web server and hosting for our site's database. We chose Bitnami as it already had inbuilt functionality with Wordpress and was a simple "one-click" installation and 
 setup. You can find Bitnami with Wordpress here: https://bitnami.com/stack/wordpress
 
-**AWS**: AWS (Amazon Web Services) is a widely adopted cloud platform created by Amazon. It offers a large number of different hosting instances for different environments and hosting needs. In this project we used AWS to host our Dev and Prod wordpress sites using EC2 instances. We chose AWS because it is the world's most
+**AWS**: AWS (Amazon Web Services) is a widely adopted cloud platform created by Amazon. It offers a large number of different hosting instances for different environments and hosting needs. In this project we used AWS to host our Dev and Prod wordpress sites using Lightsail instances loaded with Bitnami's Wordpress Installer. We chose AWS because it is the world's most
 "comprehensive and broadly adopted cloud platform" and is a relatively inexpensive option for what we needed for this project. You can find information on AWS here: https://aws.amazon.com/
+
+**Cloudflare**: Cloudflare is a web performance and security company used to provide some additional security and features to the site. In this project, it was used to provide a secure separation between the registrar, DNS, and AWS.
+We also used the service for caching in case the website went down temporarily. We used to free tier of the service and chose Cloudflare out of convenience, as we already had some
+experience or other active projects using it.
 ###Project Management
 **Github**: Github is a wildly used platform for developers to build, share and maintain software, code, applications, and more. In this project, we used Github to host a repository for all of our code and resources and to maintain detailed version control of the changes we have made throughout
 the project. Information on github can be found here: https://github.com/
 
-**Slack**
+**Slack**: Slack is a collaboration hub that allows team members to talk, chat, share content, plan and execute projects, and do whatever needs to be done to get work done. It has plugins and integrations with many of the most popular applications and services for project management, coding, design, and more.
+Slack is heavily used at JCU and in the IT department specifically and was a necessity for this project. We use slack to keep in touch with eachother, plan meetings, create polls, and get a direction on our project. We used the integrations to Github and Trello to help manage these other services from one platform. You can get started on slack here: https://slack.com/intl/en-au/
 
-**Discord**
+**Discord**: Discord in a similar application to Slack in that it is a place to collaborate and communicate with team members. You create servers to suit your purpose and create channels within servers to seperate and organise your work. You can chat, post images, pin messages, and store files with Discord. For this project
+, Discord was used because many of the group are already a part of other Discord servers and it would have greater visibility than slack for our purposes. You can get started with
+Discord here: https://discord.com/
 
-**Trello**
+**Trello**: Trello is a project and team management tool designed to help teams collaborate, assign and update tasks, and stay on track for a project. It offers an array of functions to allow
+teams to update each other on task progress, comment and assist one another, and gives an overall view on the direction a project is going. We used trello to keep organised with our tasks and goals, assign and delegate work,
+and keep up to date on what each other was doing from week to week. You can get started with trello here: https://trello.com/en
+
+**OneNote**: OneNote (by microsoft) provides a sharable and editable space to write notes, lists, strategies, and other needed documents. It creates
+a living document that can be shared between team members or made public. We used OneNote specifically for our weekly team meetings, creating task lists, checklists, and talking points as the weeks went on. You can find OneNote here: https://www.onenote.com/download
 ## Environment Overview
+###Local Environment
+Local versions of our project (localhost) were set up identically for each team member to facilitate ease of troubleshooting issues and to maintain
+a homogeneous environment across the team. Locally, each team member worked on a Github-hosted repository using PhpStorm, Grunt.js, and Sass. Each developer's local site was
+hosted using a Bitnami Wordpress package containing the necessary database integration and apache web server. Changes made in this local environment were pushed back to Github to synchronise with other teammates.
 
+###Hosted Environment
 Staging and Production environments are hosted using separate AWS Lightsail instances with Bitnami's Wordpress installer. This provides a base Wordpress installation to start from and is easy for new developers to create new instances or clone existing instances should they need to. 
 
-Production: moxh.au
+**Staging (development) Site**: dev.moxh.au | Changes to the overall site were done on a local instance or the dev server, tested in dev, and eventually pushed 
+to production using an Import/Export plugin.
 
-Staging: dev.moxh.au
+**Production (live) Site**: moxh.au
 
-Local: Up to the user on their preferred local environment. E.g. Flywheel Local, Bitnami, VVV, etc.
-
-DNS: DNS is managed through Cloudflare (free tier) which provides a degree of separation between registrar, DNS and hosting (AWS). Cloudflare also provides some caching capabilities in the event the site goes offline.
+**DNS**: DNS is managed through Cloudflare (free tier) which provides a degree of separation between registrar, DNS and hosting (AWS). Cloudflare also provides some caching capabilities in the event the site goes offline.
 
 ## Development Workflows
 
