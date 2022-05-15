@@ -73,25 +73,46 @@ to production using an Import/Export plugin.
 
 ## Development Workflows
 
+![Development Flowchart](../cp3402-2022-1-site-team02/resources/flowchart2.jpg)
+
 ### Theme Development
 
-1. From Production, export database from Production to your local environment and create a new branch from the 'release' branch
-  
-2. Make changes as required and push your updates to the 'development' branch
-  
-3. When ready to stage changes, push/import content to the Staging environment.
-  
-4. Test core functionality and changes using test plan
-  
-5. After successful tests, push/import content from Staging environment to Production environment
-  
-6. Push content to 'release' Github branch
+To maintain and edit the custom theme for our site, the developers followed the below steps:
+
+1. Set up local environment to match other developers (PhpStorm, Grunt.js, Sass, Bitnami)
+2. PULL "wp-content" folder (containing theme folders and sass folders) from Github PROD repository branch.
+3. Make required or needed changes and test on local environment.
+4. When happy with changes, PUSH changes to Github DEV repository branch
+5. Changes will be reviewed by other developers and given greenlight/approval to move forward.
+6. When required, push changes to PROD repository branch.
+7. Import updated "wp-content" folder (including theme folders) to hosted DEV site.
+8. Test new configuration and core functionality and changes using test plan.
+9. When happy with changes and approved to do so, update PROD site with new "wp-content" folder.
+
+[//]: # (10. From Production, export database from Production to your local environment and create a new branch from the 'release' branch)
+
+[//]: # (  )
+[//]: # (11. Make changes as required and push your updates to the 'development' branch)
+
+[//]: # (  )
+[//]: # (12. When ready to stage changes, push/import content to the Staging environment.)
+
+[//]: # (  )
+[//]: # (13. Test core functionality and changes using test plan)
+
+[//]: # (  )
+[//]: # (14. After successful tests, push/import content from Staging environment to Production environment)
+
+[//]: # (  )
+[//]: # (15. Push content to 'release' Github branch)
   
 
 ### Content Development
 
-Updates to Wordpress content should first be completed in the Local or Staging environments so there is no impact to end users and any content issues are identified and resolved.
+Updates to Wordpress Site Content should always be performed first in the DEV environment to avoid breaking the PROD/LIVE site. For this project the following steps will need to be followed:
+1. Make required changes to Wordpress Site/Content on Local environment
+2. Test changes 
 
-## Database Considerations
+### Database Considerations
 
 During development, ensure you always have an updated copy of the production database, especially when pushing your changes to Staging, and then Production. Pushing to Staging first ensures that both live environments have identical content.
