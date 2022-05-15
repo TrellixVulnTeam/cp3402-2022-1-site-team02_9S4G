@@ -110,8 +110,10 @@ To maintain and edit the custom theme for our site, the developers followed the 
 ### Content Development
 
 Updates to Wordpress Site Content should always be performed first in the DEV environment to avoid breaking the PROD/LIVE site. For this project the following steps will need to be followed:
-1. Make required changes to Wordpress Site/Content on Local environment
-2. Test changes 
+1. Make required changes to Wordpress Site/Content on Local environment (ideally) OR in DEV instance.
+2. Test changes using test plan
+3. Use import/export plugin to update DEV site, test again to make sure changes are not breaking PROD
+4. When approved, use import/export plugin to update PROD site
 
 ### Database Considerations
 
