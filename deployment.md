@@ -7,6 +7,7 @@ the creation and editing of the site theme and to push those changes to the deve
 used, a brief description on how (and why) they are used in this particular project, and a link to acquire them can be found below:
 
 ###Theme Development
+
 **PhpStorm**: PhpStorm is a cross-platform IDE created by JetBrains used to edit various types of code (PHP, HTML, Javascript, etc). In this project it is the primary means of editing the theme and was chosen due to its popularity and its various "Wordpress Aware" features. PhpStorm can be downloaded here: https://www.jetbrains.com/phpstorm/
 
 **_S (underscores):** Underscores is a starter theme and designed to be edited to create new CMS themes. It is lauded as a "1000-hour head start" with inbuilt css and php code; everything you need to get started. We chose underscores as it provided base structure for our code. Underscores can be found and installed here: https://underscores.me/
@@ -20,6 +21,7 @@ platforms. In this project, Grunt is used to assist in the processing of our Sas
 popular use with Wordpress sites and after testing with similar applications. Grunt can be downloaded here: https://gruntjs.com/
 
 ###Hosting and Deployment
+
 **Bitnami**: Bitnami is a library of installers and software packages used to run certain applications or provide features and support to application environments. In this project Bitnami is
 used to locally host our Wordpress site and contains an Apache web server and hosting for our site's database. We chose Bitnami as it already had inbuilt functionality with Wordpress and was a simple "one-click" installation and 
 setup. You can find Bitnami with Wordpress here: https://bitnami.com/stack/wordpress
@@ -30,7 +32,9 @@ setup. You can find Bitnami with Wordpress here: https://bitnami.com/stack/wordp
 **Cloudflare**: Cloudflare is a web performance and security company used to provide some additional security and features to the site. In this project, it was used to provide a secure separation between the registrar, DNS, and AWS.
 We also used the service for caching in case the website went down temporarily. We used to free tier of the service and chose Cloudflare out of convenience, as we already had some
 experience or other active projects using it.
+
 ###Project Management
+
 **Github**: Github is a wildly used platform for developers to build, share and maintain software, code, applications, and more. In this project, we used Github to host a repository for all of our code and resources and to maintain detailed version control of the changes we have made throughout
 the project. Information on github can be found here: https://github.com/
 
@@ -47,13 +51,17 @@ and keep up to date on what each other was doing from week to week. You can get 
 
 **OneNote**: OneNote (by microsoft) provides a sharable and editable space to write notes, lists, strategies, and other needed documents. It creates
 a living document that can be shared between team members or made public. We used OneNote specifically for our weekly team meetings, creating task lists, checklists, and talking points as the weeks went on. You can find OneNote here: https://www.onenote.com/download
+
 ## Environment Overview
+
 ###Local Environment
+
 Local versions of our project (localhost) were set up identically for each team member to facilitate ease of troubleshooting issues and to maintain
 a homogeneous environment across the team. Locally, each team member worked on a Github-hosted repository using PhpStorm, Grunt.js, and Sass. Each developer's local site was
 hosted using a Bitnami Wordpress package containing the necessary database integration and apache web server. Changes made in this local environment were pushed back to Github to synchronise with other teammates.
 
 ###Hosted Environment
+
 Staging and Production environments are hosted using separate AWS Lightsail instances with Bitnami's Wordpress installer. This provides a base Wordpress installation to start from and is easy for new developers to create new instances or clone existing instances should they need to. 
 
 **Staging (development) Site**: dev.moxh.au | Changes to the overall site were done on a local instance or the dev server, tested in dev, and eventually pushed 
