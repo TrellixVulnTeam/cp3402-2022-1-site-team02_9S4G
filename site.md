@@ -2,15 +2,15 @@
 
 ## Site Overview 
 
-To allow for ease of future modification of this wordpress site, the following overview will attempt to outline the site's layout,
-logic, widgets, and other features. The site itself is comprised of pages and posts, each allowing for different kinds of customisation.
+To allow for ease of future modification of this Wordpress site, the following overview will attempt to outline the site's layout,
+logic, widgets, and other features. The site itself is composed of pages and posts, each allowing for different kinds of customisation.
 The following main sections (PAGES) and their subsequent posts and features are listed here:
 
 ### Pages
 
 1. **HOME**: The home page is the landing page of your website. It is where new viewers will come by default. The current home page 
-contains a welcome message and image (added as a BLOCK text/image combination), and the button isnide this BLOCK is linked to your
-SIGN-UP page, and can be relinked as needed via the wordpress editor. The image is pulled from the NexGen gallery plugin and can be changed from there.
+contains a welcome message and image (added as a BLOCK text/image combination), and the button inside this BLOCK is linked to your
+SIGN-UP page, and can be relinked as needed via the Wordpress editor. The image is pulled from the NexGen gallery plugin and can be changed from there.
 The home page, as with most other PAGES, contain the various sidebar PLUGINS that provide some custom features to the site.
 2. **EVENTS**: The events page comes from a specific plugin, "The Events Calendar", and shows a full-sized monthly calendar listing whatever
 events you have currently created with a clilckable link should users require more information. The actual events can be added and editing inside the plugin itself.
@@ -26,4 +26,16 @@ form created via the "User Registration" plugin.
 
 ### Posts
 
-For this site, your posts make up the majority of your "About" page content. Each band, article, and photo gallery is a separate post, each of which can be modified and added to the page using the BLOCK editor or various plugins.
+For this site, your posts make up the majority of your "About" page content. Each band, article, and photo gallery is a separate post, each of which can be 
+modified and added to the page using the BLOCK editor or various plugins. On this site, posts have their own category to easily differentiate them from one
+another and allow for easy sorting. The current post categories are:
+1. **ARTICLE**: The Article is (so far) only used for the Jazz Radio information, but the category itself is for any posted information that does not currently
+align with any of the existing categories. In the future, use articles for any long-written commentary or advertisements on the site.
+2. **BANDS**: The Bands category is currently used in the About page and contains information regarding current bands, their history
+with the club, and contains a short informational blerb and embedded video. If any bands join later on, create a Band post and attach it to the
+existing space on the About page.
+3. **Events**: The Events category (and its posts) are only used when not using the Events Calendar plugin. A test post has been provided in this category
+for reference, but at this all events should be created within the plugin itself.
+4. **History**: Posts in the History category are used on the About page for jazz history and club history posts.
+5. **PHOTOS**: Posts with the Photos category are done by year and contain a single NextGen Gallery album (also for that year). You can use
+this category for the yearly albums or create them for special events.
