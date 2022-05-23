@@ -1,6 +1,6 @@
 # Theme Developement Overview
 
-While you can change various functions and features of the site in-situ via Wordpress, the look, feel, and many important factors are only able to be modified by changing the theme's code. Theme changes can drastically change how the site looks and if all aspects
+While you can change various functions and features of the site in-site via Wordpress, the look, feel, and many important factors are only able to be modified by changing the theme's code. Theme changes can drastically change how the site looks and if all aspects
 are displayed correctly, so be mindful of your process when applying changes (check out the [deployment.md](/deployment.md) for our local setups and how such changes should be made). Information regarding the theme, how it was created, and the major points to look
 for when modifying it can be found below.
 
@@ -18,12 +18,12 @@ important sub-folders and files, and their purpose to the overall theme are list
       - **components** (sub-folder):
       - **custom** (sub-folder): the sass custom folder was created by our developers to hold custom versions of sass starter files with our own changes added. This was done to preserve original files in case of updates or the need to recover default layouts.
           - **grunt** (sub-folder):
-              - _custom_styles.css.map:
-              - custom_styles.css:
-              - styles_archive.css:
-          - **custom_styles.scss**:
-          - **custom_vars_mixins.scss**:
-          - **output.css**:
+              - _custom_styles.css.map: This is a file created by Grunt.js
+              - custom_styles.css: This file is created from the custom_styles.css file and contains most of the custom css not provided by the default installation of                 the underscores theme. This file should not be edited because it is an automatically generated file by Grunt.js to convert the custom_styles.scss to                   css.
+              - styles_archive.css: This file is combined with the custom_styles.css to create the style.css file using Grunt.js. It contains everything that is above                                     the Custom Styles comment header in the style.css file so if you need to make a change to that code you do that here.
+          - **custom_styles.scss**: This is where you will do any editing you need for css, this will automatically been converted from scss to css and will be applied                                     to style.css. This contains most of the custom code for the site that isnt in the blank install of underscores.
+          - **custom_vars_mixins.scss**: This file contains all of the variables and mixins that is used in custom_styles.scss. If you need to change a variable/mixins                                          such as font size or colours you can do that here.
+          - **output.css**: This file isn't needed anymore and can be deleted.
       - **generic** (sub-folder):
       - **layouts** (sub-folder):
       - **plugins** (sub-folder):
