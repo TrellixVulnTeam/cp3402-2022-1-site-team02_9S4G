@@ -37,13 +37,14 @@ experience or other active projects using it.
 ### Project Management
 
 **Github**: Github is a wildly used platform for developers to build, share and maintain software, code, applications, and more. In this project, we used Github to host a repository for all of our code and resources and to maintain detailed version control of the changes we have made throughout
-the project. Information on github can be found at https://github.com/ and this project's specific repository sits at https://github.com/cp3402-students/cp3402-2022-1-site-team02
+the project. Information on github can be found at https://github.com/ and this project's specific repository sits at https://github.com/cp3402-students/cp3402-2022-1-site-team02. We use a "release" branch as our production branch and each person editing the theme will check this out
+and create their own "dev-USERNAME" branch, eventually merging to the "release" branch after testing.
 
 **Slack**: Slack is a collaboration hub that allows team members to talk, chat, share content, plan and execute projects, and do whatever needs to be done to get work done. It has plugins and integrations with many of the most popular applications and services for project management, coding, design, and more.
 Slack is heavily used at JCU and in the IT department specifically and was a necessity for this project. We use slack to keep in touch with each other, plan meetings, create polls, and get a direction on our project. We used the integrations to Github and Trello to help manage these other services from one platform. You can get started on slack here: https://slack.com/intl/en-au/
 .
 
-**Discord**: Discord in a similar application to Slack in that it is a place to collaborate and communicate with team members. You create servers to suit your purpose and create channels within servers to seperate and organise your work. You can chat, post images, pin messages, and store files with Discord. For this project
+**Discord**: Discord in a similar application to Slack in that it is a place to collaborate and communicate with team members. You create servers to suit your purpose and create channels within servers to separate and organise your work. You can chat, post images, pin messages, and store files with Discord. For this project
 , Discord was used because many of the group are already a part of other Discord servers and it would have greater visibility than slack for our purposes. You can get started with
 Discord here: https://discord.com/
 
@@ -81,15 +82,13 @@ to production using an Import/Export plugin.
 
 To maintain and edit the custom theme for our site, the developers followed the below steps:
 
-1. Set up local environment to match other developers (PhpStorm, Grunt.js, Sass, Bitnami)
-2. PULL "wp-content" folder (containing theme folders and sass folders) from Github PROD repository branch.
-3. Make required or needed changes and test on local environment.
-4. When happy with changes, PUSH changes to Github DEV repository branch
-5. Changes will be reviewed by other developers and given greenlight/approval to move forward.
-6. When required, push changes to PROD repository branch.
-7. Import updated "wp-content" folder (including theme folders) to hosted DEV site.
-8. Test new configuration and core functionality and changes using test plan.
-9. When happy with changes and approved to do so, update PROD site with new "wp-content" folder.
+1. Checkout/pull the current 'release' branch from Github repository into a new branch (name dev-USERNAME).
+2. Make required changes on dev-USERNANME branch.
+3. Use preferred SSH Tool (i.e. PUTTY) and go to DEV site: `'cd stack/wordpress/wp-content/themes'`, `git checkout -b'dev-USERNAME'`
+4. Test on DEV site to ensure changes are successful and expected.
+5. If changes are successful merge dev-USERNAME branch into 'release' branch.
+6. Update changes on PROD: ssh to PROD, `'cd stack/wordpress/wp-content/themes'`, `'git pull origin release'`
+7. When changes have stabilized, always ensure that DEV matches the PROD site.
 
 [//]: # (10. From Production, export database from Production to your local environment and create a new branch from the 'release' branch)
 
