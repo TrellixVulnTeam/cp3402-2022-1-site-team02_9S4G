@@ -48,14 +48,18 @@ important sub-folders and files, and their purpose to the overall theme are list
 
 When designing a theme you are able to make a number of choices regarding the features your website will have. Because of our project guidelines and information regarding the client (design and cms experience), we chose to keep to a minimalistic approach, including only a few key features.
 
-### Two-column layout
-Talk about the layout of the site?
+### One-column layout
+
+We decided on a minimalist approach for our website to make it easier to maintain our theme and make it easier for future developers to continue coding our theme. It also made site integration easier when adding in plugins and editing content.
+
 
 ### Sidebar
-Talk about the sidebar?
+
+The sidebar was created by copying the contents from contents_sidebar.scss into custom_styles.scss. We felt that this would make it easy for the users to access our plugins that we used for our site and give them more opportunities to see whats available on the site. If you need to edit the Sidebar the best way to do this is to edit the code in custom_styles.scss and not in the contents_sidebar.scss.
 
 ### Any other features go here
-And talk about them
+
+We chose Grunt.js to be our file watcher and to convert our sass code into css. It is included in the theme so that developers have access to the Grunt.js file that is already setup to watch any changes to sass files and update style.css. This makes it easier for future developers to code the theme as they do not have to worry about creating an extra script for managing sass conversion. All neccessary grunt files are already included in the theme. This can also be easily extended by numerous Grunt modules if the developer wants more options to manage their code.
 
 ## Design Decisions
 
