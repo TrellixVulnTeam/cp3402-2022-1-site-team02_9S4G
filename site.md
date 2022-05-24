@@ -30,12 +30,12 @@ modified and added to the page using the BLOCK editor or various plugins. On thi
 another and allow for easy sorting. The current post categories are:
 1. **ARTICLE**: The article is (so far) only used for the Jazz Radio information, but the category itself is for any posted information that does not currently
 align with any of the existing categories. In the future, use articles for any long-written commentary or advertisements on the site.
-2. **BANDS**: The bands category is currently used in the About page and contains information regarding current bands, their history
+2. **Bands**: The bands category is currently used in the About page and contains information regarding current bands, their history
 with the club, and contains a short informational blerb and embedded video. If any bands join later on, create a Band post and attach it to the
 existing space on the About page.
 3. **Events**: The events category of posts are used to automatically populate the events page. Each events post contains a featured image and some basic description detailing/describing the event.
 4. **History**: Posts in the history category are used on the About page for jazz history and club history posts.
-5. **PHOTOS**: Posts with the photos category are done by year and contain a single NextGen Gallery album (also for that year). You can use
+5. **Photos**: Posts with the photos category are done by year and contain a single NextGen Gallery album (also for that year). You can use
 this category for the yearly albums or create them for special events.
 
 ### Plugins
