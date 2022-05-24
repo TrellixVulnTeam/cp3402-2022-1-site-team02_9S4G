@@ -13,7 +13,7 @@ Our theme was created using [underscores](https://underscores.me/) with the addi
 When looking at the site directory and repository, the theme "tsvjazz" sits within the 'wp-content/themes' area. Inside the 'tsvjazz' folder are a number of sub-folders and files important for editing and maintaining the theme. A basic overview of the folder structure,
 important sub-folders and files, and their purpose to the overall theme are listed below:
 
-- **tsvjazz** (main folder)
+- **tsv-jazz** (main folder)
   - **sass** (sub-folder): the sass folder contains a number of important elements and was automatically added to the folder structure when the starter theme was "sassified" in underscores. The sass folder contains the majority of custom code that gets output to the .css file.
       - **custom** (sub-folder): the sass custom folder was created by our developers to hold custom versions of sass starter files with our own changes added. This was done to preserve original files in case of updates or the need to recover default layouts.
           - **grunt** (sub-folder):
@@ -53,16 +53,42 @@ The below list is a number of important factors of the current theme and our jus
 
 ### Structure
 
-Talk about structure variables, layout, sidebar?, other things, and justify why we chose them. Include important files and variables to make changes.
+#### Padding
+Padding values are based on the 'phi' value which is further explained [here](https://www.bluearcher.com/blog-item-key-to-golden-ratio).
+
+Default padding values are set in the 'structure' section of custom_vars_mixins.scss and can be modified by either multiplying or dividing by the $phi variable.
+
+To modify padding for specific elements in custom_styles.scss, multiply the $phi value by the unit value. For example:<br> `'padding-left: $phi * 1rem'`
+
+We are specifically using 'rem' (root em) values as they are based on the root element and are generally easier to work with and troubleshoot especially as the styling expands.
+
+
+
 
 ### Typography
 
-Talk about our choice of font, font size, spacing, etc , reasoning for it, and important files. Something like:
+#### 
 
-**Font Used**: X, we chose X font because Y. You can change the font using the X variable in the Z file, located here: _______.
+#### Font
+We are using the [Raleway](https://fonts.google.com/specimen/Raleway) font for our primary font from Google Fonts which is published under the Open Font License meaning it is free for commercial use. The font provides an elegant look that is easy to read.
+
+The fonts are set using the following variables set within custom_vars_mixins.scss:
+- $font__main
+- $font__code
+- $font__pre
 
 ### Colours
 
-Talk about our choice of colours, why we chose them, variables to change if you need to change the colour, important files within file structure, etc
+The client requested we maintain the 'yellow' colour theme, so we have maintained that with a gold and grey that meshes well with the existing logo.
 
-### Any other important sections
+These colours are set using the following variables set within custom_vars_mixins.scss:
+- $color__text-main
+- $color__link
+- $color__link-visited
+- $color__link-hover
+- $color__background-body
+- $color__border-main_panel
+- $color__background-main_panel
+
+
+Colours were generated using [Coolors](https://coolors.co).
