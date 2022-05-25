@@ -995,7 +995,7 @@ a {
 }
 
 a:hover, a:active {
-  border-bottom: 1px solid #ff9f1c;
+  border-bottom: 1px dotted #ff9f1c;
 }
 
 blockquote {

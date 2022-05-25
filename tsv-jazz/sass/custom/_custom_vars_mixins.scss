@@ -141,7 +141,7 @@ $color__entry_highlight: #7B6048;
     border-bottom: 1px dotted transparent;
   }
   a:hover, a:active {
-    border-bottom: 1px solid $color__link;
+    border-bottom: 1px dotted $color__link;
   }
 }
 
